@@ -1,0 +1,15 @@
+import { Data } from './data.js';
+var seriesTbody = document.getElementById('series');
+var averageSeasons = 0;
+renderSeriesInTable(Data);
+function renderSeriesInTable(series) {
+    console.log("Leyendo series...");
+    series.forEach(function (serie) {
+        var trElement = document.createElement('tr');
+        trElement.innerHTML = "<td>".concat(serie.num, "</td>\n                                <td>").concat(serie.name, "</td>\n                                <td>").concat(serie.channel, "</td>\n                                <td>").concat(serie.seasons, "</td>");
+        seriesTbody.appendChild(trElement);
+        averageSeasons += serie.seasons;
+    });
+    averageSeasons /= series.length;
+    document.getElementById("average").innerHTML = "Seasons Average: ".concat(averageSeasons);
+}
