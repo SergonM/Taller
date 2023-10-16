@@ -9,7 +9,9 @@ function renderSeriesInTable(series) {
         trElement.innerHTML = "<td>".concat(serie.num, "</td>\n                                <td>").concat(serie.name, "</td>\n                                <td>").concat(serie.channel, "</td>\n                                <td>").concat(serie.seasons, "</td>");
         seriesTbody.appendChild(trElement);
         averageSeasons += serie.seasons;
+        console.log("Serie ".concat(serie.num, " leida"));
     });
     averageSeasons /= series.length;
     document.getElementById("average").innerHTML = "Seasons Average: ".concat(averageSeasons);
+    console.log("Lectura terminada");
 }

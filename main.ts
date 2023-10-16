@@ -10,18 +10,20 @@ function renderSeriesInTable(series: Serie[]): void{
     console.log("Leyendo series...");
     series.forEach((serie) => {
         let trElement = document.createElement('tr');
-        
+
         trElement.innerHTML =  `<td>${serie.num}</td>
                                 <td>${serie.name}</td>
                                 <td>${serie.channel}</td>
                                 <td>${serie.seasons}</td>`;
-        
-        seriesTbody.appendChild(trElement);
 
+        seriesTbody.appendChild(trElement);
         averageSeasons += serie.seasons;
+        console.log(`Serie ${serie.num} leida`);
     });
 
     averageSeasons /= series.length;
 
     document.getElementById("average")!.innerHTML = `Seasons Average: ${averageSeasons}`;
+
+    console.log("Lectura terminada");
 }
