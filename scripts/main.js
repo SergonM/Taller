@@ -6,7 +6,7 @@ function renderSeriesInTable(series) {
     console.log("Leyendo series...");
     series.forEach(function (serie) {
         var trElement = document.createElement('tr');
-        trElement.innerHTML = "<td>".concat(serie.num, "</td>\n                                <td>").concat(serie.name, "</td>\n                                <td>").concat(serie.channel, "</td>\n                                <td>").concat(serie.seasons, "</td>");
+        trElement.innerHTML = "<th>".concat(serie.num, "</th>\n                                <td>").concat(serie.name, "</td>\n                                <td>").concat(serie.channel, "</td>\n                                <td>").concat(serie.seasons, "</td>");
         seriesTbody.appendChild(trElement);
         averageSeasons += serie.seasons;
         console.log("Serie ".concat(serie.num, " leida"));
