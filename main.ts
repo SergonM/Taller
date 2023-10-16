@@ -12,7 +12,7 @@ function renderSeriesInTable(series: Serie[]): void{
         let trElement = document.createElement('tr');
 
         trElement.innerHTML =  `<th>${serie.num}</th>
-                                <td>${serie.name}</td>
+                                <td class="text-primary">${serie.name}</td>
                                 <td>${serie.channel}</td>
                                 <td>${serie.seasons}</td>`;
 
