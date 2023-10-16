@@ -9,3 +9,7 @@ Esta aplicación es un visor de series que permite cargar y mostrar un conjunto 
 - Carga y visualización de datos de series desde un conjunto de datos.
 - Presentación de series en una tabla en una página web.
 - Calculadora del promedio de temporadas de las series.
+
+## Capturas de Pantalla
+
+![image](https://github.com/SergonM/Taller/assets/111070667/778d69e8-b1fd-46bb-a599-d4e22478ac9e)
