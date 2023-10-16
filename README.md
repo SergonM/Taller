@@ -18,6 +18,7 @@ Cuando se abre archivo HTML directamente desde el sistema de archivos local, es 
 
 ## Capturas de Pantalla
 
-![image](https://github.com/SergonM/Taller/assets/111070667/778d69e8-b1fd-46bb-a599-d4e22478ac9e)
+![image](https://github.com/SergonM/TallerTS1/assets/111070667/7c2c576e-939d-4ab0-9a4e-d3664c8589a3)
+
 
 
